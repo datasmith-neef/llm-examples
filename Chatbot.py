@@ -8,7 +8,11 @@ with st.sidebar:
     "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
 
 st.title("💬 Datasmith-GPT für Profis")
-st.caption("🚀 A streamlit chatbot powered by OpenAI LLM and Datasmith Office")
+st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
+
+tutorial_prompt = ""
+if "messages" not in st.session_state:
+    st.session_state["messages"] = [{"role": "assistant","content": "Hi, welche Aufgabe kann ich für dich übernehmen"}]
 
 # Dropdown-Menü hinzufügen
 role_options = ["Standard", "Tutorial-Writer"]
@@ -27,14 +31,13 @@ if selected_role == "Tutorial-Writer":
     
     Beachte: Gehe immer davon aus, dass der Benutzer keine Vorkenntnisse zum Thema hat. Gestalte die Tutorials immer sehr detailliert und leicht nachvollziehbar.
     """
-else:
-    tutorial_prompt = ""
+    # Systemnachricht zur Liste der Nachrichten hinzufügen
+    st.session_state.messages.append({"role": "system", "content": tutorial_prompt})
 
-if "messages" not in st.session_state:
-    st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
-
+# Nachrichten anzeigen, außer denen mit der Rolle "system"
 for msg in st.session_state.messages:
-    st.chat_message(msg["role"]).write(msg["content"])
+    if msg["role"] != "system":
+        st.chat_message(msg["role"]).write(msg["content"])
 
 if prompt := st.chat_input():
     if not openai_api_key:
@@ -44,8 +47,7 @@ if prompt := st.chat_input():
     openai.api_key = openai_api_key
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
-    # Den ausgewählten Prompt basierend auf der ausgewählten Rolle verwenden
-    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages, prompt=tutorial_prompt)
+    response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
     msg = response.choices[0].message
     st.session_state.messages.append(msg)
     st.chat_message("assistant").write(msg.content)
