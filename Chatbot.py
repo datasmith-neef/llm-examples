@@ -1,21 +1,65 @@
 import openai
 import streamlit as st
+import secret as s
+import os    
+import pcap
+st.title("💬 Datasmith-GPT")
+st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
+
+
+import streamlit as st
+
+
+st.markdown("---")
+
+
+
 
 with st.sidebar:
+
     openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
     "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
-    "[View the source code](https://github.com/streamlit/llm-examples/blob/main/Chatbot.py)"
-    "[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)"
+    
 
-st.title("💬 Datasmith-GPT für Profis")
-st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
+    user_option = st.radio("Wählen Sie eine Option:", options=["Anmelden", "Registrieren"])
+
+    username = st.text_input("Benutzername")
+    password = st.text_input("Passwort", type="password")
+
+    if openai_api_key and username and password :
+        user = s.Users(username,openai_api_key)
+    
+
+    if user_option == "Registrieren":
+        confirm_password = st.text_input("Passwort bestätigen", type="password")
+        if st.button("Registrieren"):
+            if password == confirm_password:
+                # Speichern Sie die Benutzerdaten in einer Datenbank oder einer Datei
+                st.success("Registrierung erfolgreich!")
+            else:
+                st.error("Die Passwörter stimmen nicht überein.")
+
+    elif user_option == "Anmelden":
+        if st.button("Anmelden"):
+            # Überprüfen Sie die Benutzerdaten mit den gespeicherten Daten
+            # Beispiel: if check_credentials(username, password):
+            if True:  # Platzhalter für die Überprüfung der Anmeldeinformationen
+                st.success("Anmeldung erfolgreich!")
+                openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
+                if st.button("API-Schlüssel speichern"):
+                    encrypted_key = encrypt_key(openai_api_key)
+                    # Speichern Sie den verschlüsselten Schlüssel in der Datenbank oder in einer Datei
+                    st.success("API-Schlüssel erfolgreich gespeichert!")
+            else:
+                st.error("Falscher Benutzername oder Passwort.")
+
 
 tutorial_prompt = ""
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant","content": "Hi, welche Aufgabe kann ich für dich übernehmen"}]
 
 # Dropdown-Menü hinzufügen
-role_options = ["Standard", "Tutorial-Writer"]
+role_options = ["Standard", "Tutorial-Writer", "PCAP"]
 selected_role = st.selectbox("Rolle auswählen:", role_options)
 
 # Den Prompt für die Rolle "Tutorial-Writer" festlegen
@@ -45,9 +89,13 @@ if prompt := st.chat_input():
         st.stop()
 
     openai.api_key = openai_api_key
+
     st.session_state.messages.append({"role": "user", "content": prompt})
     st.chat_message("user").write(prompt)
     response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=st.session_state.messages)
     msg = response.choices[0].message
     st.session_state.messages.append(msg)
     st.chat_message("assistant").write(msg.content)
+
+if selected_role == "PCAP":
+    pcap.start_pcap()
