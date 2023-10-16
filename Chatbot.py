@@ -1,6 +1,5 @@
 import openai
 import streamlit as st
-import secret as s
 import os    
 import pcap
 import streamlit as st
