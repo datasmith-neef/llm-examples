@@ -5,34 +5,50 @@ import pcap
 import streamlit as st
 
 
+import streamlit as st
 
-
-st.title("💬 Datasmith-GPT")
-st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
-
-
-
-# Die animierte Textfunktion
-animated_text = """
-    <span id="animatedText"></span>
-    <script>
-        const text = "Hier ist Ihr animierter Text!";
-        let index = 0;
-
-        function writeText() {
-            if (index < text.length) {
-                document.getElementById('animatedText').innerHTML += text.charAt(index);
-                index++;
-                setTimeout(writeText, 1000);  // Verzögerung von 100ms
+st.markdown("""
+    <style>
+        @keyframes typewriter {
+            from { 
+                width: 0; 
+            }
+            to { 
+                width: 100%; 
             }
         }
 
-        writeText();
-    </script>
-"""
+        @keyframes blink {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: black;
+            }
+   
+     
+        }
+
+        .typewriter-text {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 0.05em solid black;  /* Cursor-Effekt */
+            white-space: nowrap;
+            font-size: 2.5rem; 
+            font-weight: bold;
+            animation: 
+        typewriter 5s steps(50, end), 
+        blink .75s step-end 13, 
+        fadeOutCursor 0.25s forwards 10s;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown('<div class="typewriter-text">💬 Datasmith-GPT</div>', unsafe_allow_html=True)
+
+st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
 
 
-st.markdown(animated_text, unsafe_allow_html=True)
 
 
 st.markdown("---")
