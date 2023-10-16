@@ -7,6 +7,12 @@ import streamlit as st
 
 
 
+
+st.title("💬 Datasmith-GPT")
+st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
+
+
+
 # Die animierte Textfunktion
 animated_text = """
     <span id="animatedText"></span>
@@ -18,7 +24,7 @@ animated_text = """
             if (index < text.length) {
                 document.getElementById('animatedText').innerHTML += text.charAt(index);
                 index++;
-                setTimeout(writeText, 100);  // Verzögerung von 100ms
+                setTimeout(writeText, 1000);  // Verzögerung von 100ms
             }
         }
 
@@ -26,8 +32,7 @@ animated_text = """
     </script>
 """
 
-st.title("💬 Datasmith-GPT")
-st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
+
 st.markdown(animated_text, unsafe_allow_html=True)
 
 
