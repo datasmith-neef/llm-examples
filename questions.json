@@ -1,1362 +1,1366 @@
-{
-    "Q101": {
-      "Category": "Operators",
-      "Question": "What will be the output of the following code snippet?",
-      "CodeSnippet": "print(3 / 5)",
-      "Options": {
-        "1": "0",
-        "2": "6/10",
-        "3": "None of the above.",
-        "4": "0.6"
-      }
-    },
-    "Q102": {
-      "Category": "Operators",
-      "Question": "What will be the output of the following code snippet?",
-      "CodeSnippet": "None",
-      "Options": {
-        "1": "x=2"
-        "2": "y=1"
-        "3": "x*=y+1"
-        "4": "print(x)"
-      }
-    },
-    "Q103": {
-      "Category": "Basics",
-      "Question": "What will be the output of the following code snippet?",
-      "CodeSnippet": ["x =1","y =2","z =x","x=y","y =z","print(x, y)"],
-      "Options": {
-        "1": "1 2",
-        "2": "2 2",
-        "3": "1 1",
-        "4": "2 1",
-        
-      }
-    },
-    "Q104": {
-      "Category": "Data Aggregates",
-      "Question": "What will be the output of the following code snippet?",
-      "CodeSnippet": ["a=1[1,2,3,4,5, 6,7, 8, 9]",","print(a[::2])"],
-      "Options": {
-        "1": "[1, 2, 3]",
-        "2": "[1, 3, 5,7, 9]",
-        "3": "[8, 9]",
-        "4": "[1, 2]"
-      }
-    },
-    "Q105": {
-      "Category": "Data Aggregates",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": ["data = ['Peter\u2019, 404, 3.03, 'Wellert', 33.3"],"print(data[1:3])"],
-      "Options": {
-        "1": "['Peter', 404, 3.03, 'Wellert', 33.3]",
-        "2": "[404, 3.03]",
-        "3": "None of the above.",
-        "4": "['Peter', 'Wellert']"
-      }
-    },
-    "Q106": {
-      "Category": "Functions",
-      "Question": "What is the default return value for a function that does not explicitly return any value?",
-      "Options": {
-        "1": "None",
-        "2": "public",
-        "3": "int",
-        "4": "Null",
-        "5": "void",
-        
-      }
-    },
-    "Q108": {
-      "Category": "Data Aggregates",
-      "Question": "What will be the output of the following code snippet?",
-      "CodeSnippet": ["d={}","d[1]=1","d['1'] =2","d[1] += 1", ["""sum = 0
+[
+  { "Q101": {
+    "Category": "Operators",
+    "Question": "What will be the output of the following code snippet?",
+    "CodeSnippet": "print(3 / 5)",
+    "Options": {
+      "1": "0",
+      "2": "6/10",
+      "3": "None of the above.",
+      "4": "0.6"
+    }
+  },
+  "Q102": {
+    "Category": "Operators",
+    "Question": "What will be the output of the following code snippet?",
+    "CodeSnippet": "None",
+    "Options": {
+      "1": "x=2",
+      "2": "y=1",
+      "3": "x*=y+1",
+      "4": "print(x)"
+    }
+  },
+  "Q103": {
+    "Category": "Basics",
+    "Question": "What will be the output of the following code snippet?",
+    "CodeSnippet": ["x =1","y =2","z =x","x=y","y =z","print(x, y)"],
+    "Options": {
+      "1": "1 2",
+      "2": "2 2",
+      "3": "1 1",
+      "4": "2 1",
       
-      for k in d:
-        sum += d[k]
+    }
+  },
+  "Q104": {
+    "Category": "Data Aggregates",
+    "Question": "What will be the output of the following code snippet?",
+    "CodeSnippet": ["a=l[1,2,3,4,5, 6,7, 8, 9]","print(a[::2])"],
+    "Options": {
+      "1": "[1, 2, 3]",
+      "2": "[1, 3, 5,7, 9]",
+      "3": "[8, 9]",
+      "4": "[1, 2]"
+    }
+  },
+  "Q105": {
+    "Category": "Data Aggregates",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": ["data = ['Peter\u2019, 404, 3.03, 'Wellert', 33.3"],"print(data[1:3])"],
+    "Options": {
+      "1": "['Peter', 404, 3.03, 'Wellert', 33.3]",
+      "2": "[404, 3.03]",
+      "3": "None of the above.",
+      "4": "['Peter', 'Wellert']"
+    }
+  },
+  "Q106": {
+    "Category": "Functions",
+    "Question": "What is the default return value for a function that does not explicitly return any value?",
+    "Options": {
+      "1": "None",
+      "2": "public",
+      "3": "int",
+      "4": "Null",
+      "5": "void"
       
-      print(sum)"""]],
-      "Options": {
-        "1": "3"
-        "2": "1"
-        "3": "4"
-        "4": "2"
-        
-      }
-    },
-    "Q109": {
-      "Category": "Data Aggregates",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": ["""
-      list1 = [1, 3]
-      list2 = list1
-      list1[0] = 4
-      print(list2)"""],
+    }
+  },
+  "Q108": {
+    "Category": "Data Aggregates",
+    "Question": "What will be the output of the following code snippet?",
+    "CodeSnippet": ["d={}","d[1]=1","d['1'] =2","d[1] += 1","sum = 0",
+    "for k in d:",
+      "sum += d[k]",
+    "print(sum)"],
+    
+    "Options": {
+      "1": "3",
+      "2": "1",
+      "3": "4",
+      "4": "2"
       
-      "Options": {
-        "1": "[1, 3, 4]",
-        "2": "[1, 4]",
-        "3": "[4, 3]",
-        "4": "[1, 3]"
-      }
-    },
-    "Q110": {
-      "Category": "Data Types",
-      "Question": "Which of the variables will contain False ?Consider the following code snippet:["""" 
-      w = bool(23)
-      x = bool('')
-      bool(' ')
-      bool([False])"""]",
-      "Options": {
-        "1": "w"
-        "2": "y"
-        "3": "z"
-        "4": "x"
-      }
-    },
-  
-  
-  
-    "Q111": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "def func(text, num):",
-        "    while num > 0:",
-        "        print(text)",
-        "        num = num - 1",
-        "func('Hello', 3)"
-      ],
-      "Options": {
-        "1": "An infinite loop.",
-        "2": "Hello\nHello",
-        "3": "Hello\nHello\nHello\nHello",
-        "4": "Hello\nHello\nHello"
-      }
-    },
-    "Q113": {
-      "Category": "Operators",
-      "Question": "An operator able to check whether two values are not equal is coded as:",
-      "Options": {
-        "1": "!=",
-        "2": "<>",
-        "3": "not ==",
-        "4": "=/="
-      }
-    },
-    "Q116": {
-      "Category": "Functions",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        """
-        num = 1,
-        def func():
-          num = num + 3
-          print(num)
-          
-        func()
-        print(num)"""
-      ],
-      "Options": {
-        "1": "1 4",
-        "2": "4 4",
-        "3": "1 1",
-        "4": "4 1"
-        "5": "The code is erroneous."
-      }
-    },
-    "Q117": {
-      "Category": "Data Aggregates",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": "print(list('hello'))",
-      "Options": {
-        "1": "['h', 'e', 'l', 'l', 'o']",
-        "2": "[h,e,l,l,o]",
-        "3": "None of the above.",
-        "4": "hello"
-      }
-    },
-    "Q118": {
-      "Category": "Control Flow",
-      "Question": "How many stars will the following snippet print to the monitor?",
-      "CodeSnippet": [
-        "i=4",
-        "while i > 0:",
-        "    i-=2",
-        "    print('*')",
-        "    if i == 2:",
-        "        break",
-        "else:",
-        "    print('*')"
-      ],
-      "Options": {
-        "1": "1",
-        "2": "0",
-        "3": "The snippet will enter an infinite loop.",
-        "4": "2"
-      }
-    },
-    "Q119": {
-      "Category": "Operators",
-      "Question": "What value will be assigned to the x variable?",
-      "CodeSnippet": "z=3\ny =17\n\nx=y<z and z>y or y>z and z<y",
-      "Options": {
-        "1": "True",
-        "2": "False",
-        "3": "1",
-        "4": "0"
-      }
-    },
-    "Q120": {
-      "Category": "Basics",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x =1",
-        "y=2",
-        "x, y, z =x, x, y",
-        "z, y, z=x, y, 2",
-        "print(x, y, z)"
-      ],
-      "Options": {
-        "1": "1 1 2",
-        "2": "1 2 2",
-        "3": "1 2 1",
-        "4": "2 1 2"
-      }
-    },
-    "Q121": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "def func(x):",
-        "    return 1 if x % 2 != 0 else 2",
-        "print(func(func(1)))"
-      ],
-      "Options": {
-        "1": "1",
-        "2": "None",
-        "3": "2",
-        "4": "The code is erroneous."
-      }
-    },
-  
-    "Q122": {
-    "Category": "Control Flow",
-    "Question": "How many stars will the following code print to the monitor?",
+    }
+  },
+  "Q109": {
+    "Category": "Data Aggregates",
+    "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
-      "i=0",
-      "while i <= 3:",
-      "    i+=2",
+    "list1 = [1, 3]",
+    "list2 = list1",
+    "list1[0] = 4",
+    "print(list2)"],
+    
+    "Options": {
+      "1": "[1, 3, 4]",
+      "2": "[1, 4]",
+      "3": "[4, 3]",
+      "4": "[1, 3]"
+    }
+  },
+  "Q110": {
+    "Category": "Data Types",
+    "Question": "Which of the variables will contain False ?Consider the following code snippet:["""" 
+    w = bool(23)
+    x = bool('')
+    bool(' ')
+    bool([False])"""]",
+    "Options": {
+      "1": "w",
+      "2": "y",
+      "3": "z",
+      "4": "x"
+    }
+  },
+
+
+
+  "Q111": {
+    "Category": "Control Flow",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "def func(text, num):",
+      "    while num > 0:",
+      "        print(text)",
+      "        num = num - 1",
+      "func('Hello', 3)"
+    ],
+    "Options": {
+      "1": "An infinite loop.",
+      "2": "Hello\nHello",
+      "3": "Hello\nHello\nHello\nHello",
+      "4": "Hello\nHello\nHello"
+    }
+  },
+  "Q113": {
+    "Category": "Operators",
+    "Question": "An operator able to check whether two values are not equal is coded as:",
+    "Options": {
+      "1": "!=",
+      "2": "<>",
+      "3": "not ==",
+      "4": "=/="
+    }
+  },
+  "Q116": {
+    "Category": "Functions",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      """
+      num = 1,
+      def func():
+        num = num + 3
+        print(num)
+        
+      func()
+      print(num)"""
+    ],
+    "Options": {
+      "1": "1 4",
+      "2": "4 4",
+      "3": "1 1",
+      "4": "4 1"
+      "5": "The code is erroneous."
+    }
+  },
+  "Q117": {
+    "Category": "Data Aggregates",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": "print(list('hello'))",
+    "Options": {
+      "1": "['h', 'e', 'l', 'l', 'o']",
+      "2": "[h,e,l,l,o]",
+      "3": "None of the above.",
+      "4": "hello"
+    }
+  },
+  "Q118": {
+    "Category": "Control Flow",
+    "Question": "How many stars will the following snippet print to the monitor?",
+    "CodeSnippet": [
+      "i=4",
+      "while i > 0:",
+      "    i-=2",
+      "    print('*')",
+      "    if i == 2:",
+      "        break",
+      "else:",
       "    print('*')"
     ],
     "Options": {
-      "1": "three",
-      "2": "one",
-      "3": "zero",
-      "4": "two"
+      "1": "1",
+      "2": "0",
+      "3": "The snippet will enter an infinite loop.",
+      "4": "2"
     }
   },
-  "Q124": {
-    "Category": "Basics",
-    "Question": "Which of the following variable names is illegal?",
+  "Q119": {
+    "Category": "Operators",
+    "Question": "What value will be assigned to the x variable?",
+    "CodeSnippet": "z=3\ny =17\n\nx=y<z and z>y or y>z and z<y",
     "Options": {
-      "1": "In",
-      "2": "in",
-      "3": "in_",
-      "4": "IN"
+      "1": "True",
+      "2": "False",
+      "3": "1",
+      "4": "0"
     }
   },
-  "Q125": {
-    "Category": "File IO",
+  "Q120": {
+    "Category": "Basics",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
-      "file = open('data.txt', 'w+')",
-      "print('Name of the file: ', file.name)",
-      "s = 'Peter Wellert\\nHello everybody'",
-      "file.write(s)",
-      "file.seek(0)",
-      "for line in file:",
-      "    print(line)",
-      "file.close()"
+      "x =1",
+      "y=2",
+      "x, y, z =x, x, y",
+      "z, y, z=x, y, 2",
+      "print(x, y, z)"
     ],
     "Options": {
-      "1": "Peter Wellert\nHello everybody",
-      "2": "The code is erroneous.",
-      "3": "Peter Wellert Hello everybody",
-      "4": "Name of the file: data.txt\nPeter Wellert\nHello everybody"
+      "1": "1 1 2",
+      "2": "1 2 2",
+      "3": "1 2 1",
+      "4": "2 1 2"
     }
   },
-  "Q126": {
-    "Category": "Error Handling",
+  "Q121": {
+    "Category": "Control Flow",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
       "def func(x):",
-      "    try:",
-      "         x = x / x",
-      "    except:",
-      "        print('a', end='')",
-      "    else:",
-      "        print('b', end='')",
-      "    finally:",
-      "        print('c', end='')",
-      "func(1)",
-      "func(0)"
+      "    return 1 if x % 2 != 0 else 2",
+      "print(func(func(1)))"
     ],
     "Options": {
-      "1": "bac",
-      "2": "bca",
-      "3": "bcac",
-      "4": "acac",
-      "5": "bcbc"
+      "1": "1",
+      "2": "None",
+      "3": "2",
+      "4": "The code is erroneous."
     }
   },
-  "Q127": {
+
+  "Q122": {
+  "Category": "Control Flow",
+  "Question": "How many stars will the following code print to the monitor?",
+  "CodeSnippet": [
+    "i=0",
+    "while i <= 3:",
+    "    i+=2",
+    "    print('*')"
+  ],
+  "Options": {
+    "1": "three",
+    "2": "one",
+    "3": "zero",
+    "4": "two"
+  }
+},
+"Q124": {
+  "Category": "Basics",
+  "Question": "Which of the following variable names is illegal?",
+  "Options": {
+    "1": "In",
+    "2": "in",
+    "3": "in_",
+    "4": "IN"
+  }
+},
+"Q125": {
+  "Category": "File IO",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "file = open('data.txt', 'w+')",
+    "print('Name of the file: ', file.name)",
+    "s = 'Peter Wellert\\nHello everybody'",
+    "file.write(s)",
+    "file.seek(0)",
+    "for line in file:",
+    "    print(line)",
+    "file.close()"
+  ],
+  "Options": {
+    "1": "Peter Wellert\nHello everybody",
+    "2": "The code is erroneous.",
+    "3": "Peter Wellert Hello everybody",
+    "4": "Name of the file: data.txt\nPeter Wellert\nHello everybody"
+  }
+},
+"Q126": {
+  "Category": "Error Handling",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "def func(x):",
+    "    try:",
+    "         x = x / x",
+    "    except:",
+    "        print('a', end='')",
+    "    else:",
+    "        print('b', end='')",
+    "    finally:",
+    "        print('c', end='')",
+    "func(1)",
+    "func(0)"],
+  "Options": {
+    "1": "bac",
+    "2": "bca",
+    "3": "bcac",
+    "4": "acac",
+    "5": "bcbc"
+  }
+},
+"Q127": {
+  "Category": "Error Handling",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "def func():",
+    "    try:",
+    "        print(23)",
+    "    finally:",
+    "        print(42)",
+    "func()"],
+  "Options": {
+    "1": "23",
+    "2": "42\n23",
+    "3": "42",
+    "4": "23\n42"
+  }
+},
+
+"Q129": {
+  "Category": "OOP",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "class Test:",
+    "    def __init__(self, s='Welcome'):",
+    "        self.s = s",
+    "    def print(self):",
+    "        print(self.s)",
+    "x = Test()",
+    "x.print()"],
+  "Options": {
+    "1": "The code is erroneous, because the constructor is called without an argument.",
+    "2": "Nothing",
+    "3": "Welcome",
+    "4": "The code is erroneous, because the print method is called without an argument."
+  }
+},
+
+"Q130": {
+  "Category": "OOP",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "class A:",
+    "    pass",
+    "class B(A):",
+    "    pass",
+    "class C(B):",
+    "    pass",
+    "print(issubclass(C, A))"],
+  "Options": {
+    "1": "1",
+    "2": "False",
+    "3": "0",
+    "4": "The code is erronous.",
+    "5": True
+  }
+},
+"Q131": {
+  "Category": "OOP",
+  "Question": "What is the expected output of the following code?",
+  "CodeSnippet": [
+    "class A:",
+    "    def __init__(self, name):",
+    "        self.name = name",
+    "a = A('class')",
+    "print(a)"],
+  "Options": {
+    "1": "A number.",
+    "2": "name",
+    "3": "class",
+    "4": "A string ending with a long hexadecimal number."
+  }
+},
+
+  "Q133": {
+    "Category": "Modules",
+    "Question": "Knowing that a function named randint() resides in the module named random, choose the proper way to import it:",
+    "Options": {
+      "1": "from random import randint",
+      "2": "from randint import random",
+      "3": "import randint",
+      "4": "import randint from random"
+    }
+  },
+  "Q136": {
+    "Category": "Data Types",
+    "Question": "What is the expected output of the following code if the user enters 2 and 4 ?",
+    "CodeSnippet": [
+      "x = input()",
+      "y = input()",
+      "print(x + y)"],
+    "Options": {
+      "1": "6",
+      "2": "2",
+      "3": "24",
+      "4": "4"
+    }
+  },
+  "Q137": {
+    "Category": "Data Types",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "z=y=x=1",
+      "print(x, y, z, sep='*')"
+    ],
+    "Options": {
+      "1": "The code is erroneous.",
+      "2": "1 1 1",
+      "3": "1*1*1",
+      "4": "111*",
+      "5": "x y z",
+      "6": "x*y*z"
+    }
+  },
+  "Q139": {
+    "Category": "Modules",
+    "Question": "When a module is imported, its contents:",
+    "Options": {
+      "1": "are ignored.",
+      "2": "are executed depending on the contents.",
+      "3": "are executed as many times as they are imported.",
+      "4": "are executed once."
+    }
+  },
+  "Q140": {
     "Category": "Error Handling",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
-      "def func():",
-      "    try:",
-      "        print(23)",
-      "    finally:",
-      "        print(42)",
-      "func()"
+      "num = '7' * '7'",
+      "print(num)"
     ],
     "Options": {
-      "1": "23",
-      "2": "42\n23",
-      "3": "42",
-      "4": "23\n42"
+      "1": "49",
+      "2": "7777777",
+      "3": "77",
+      "4": "The code is erroneous."
     }
   },
-  "Q129": {
+  "Q141": {
+    "Category": "Operators",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x=1//5+1/5",
+      "print(x)"
+    ],
+    "Options": {
+      "1": "0.0",
+      "2": "0.2",
+      "3": "0.4",
+      "4": "0"
+    }
+  },
+  "Q143": {
+    "Category": "Functions",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "def func(p1, p2):",
+      "    p1 = 1",
+      "    p2[0] = 42",
+      "x = 3",
+      "y = [1, 2, 3]",
+      "func(x, y)",
+      "print(x, y[0])"
+    ],
+    "Options": {
+      "1": "1 1",
+      "2": "1 42",
+      "3": "The code is erronous",
+      "4": "3 42",
+      "5": "3 1"
+    }
+  },
+  "Q144": {
+    "Category": "Modules",
+    "Question": "What is the correct command to shuffle the following list?",
+    "CodeSnippet": [
+      "import random",
+      "people = ['Peter', 'Paul', 'Mary', 'Jane']",
+     
+    "Options": {
+      "1": "random.shuffle(people)",
+      "2": "shuffle(people)",
+      "3": "random.shuffleList(people)",
+      "4": "people.shuffle()"
+    }
+  },
+
+  "Q145": {
+    "Category": "Control Flow",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]",
+      "def func(data):",
+      "    res = data[0][0]",
+      "    for da in data:",
+      "        for d in da:",
+      "            if res < d:",
+      "                res = d",
+      "    return res",
+      "print(func(x[0]))"
+    ],
+    "Options": {
+      "1": "4",
+      "2": "6",
+      "3": "2",
+      "4": "8"
+      "5": "The code is erroneous"
+    }
+  },
+  "Q146": {
+    "Category": "Data Aggregates",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "nums = [3, 4, 5, 20, 5, 25, 1, 3]",
+      "nums.pop(1)",
+      "print(nums)"
+    ],
+    "Options": {
+      "1": "[1, 3, 3, 4, 5, 5, 20, 25]"
+      "2": "[3, 4, 5, 20, 5, 25, 1, 3]",
+      "3": "[1, 3, 4, 5, 20, 5, 25]",
+      "4": "[3, 5, 20, 5, 25, 1, 3]",
+      "5": "[3, 1, 25, 5, 20, 5, 4]"
+    }
+  },
+  "Q149": {
+    "Category": "Functions",
+    "Question": "What is the expected behavior of the following snippet?",
+    "CodeSnippet": [
+      "x=1",
+      "def a(x):",
+      "    return 2 * x",
+      "x = 2 + a(x)",
+      "print(a(x))"
+    ],
+    "Options": {
+      "1": "cause a runtime exception on Line 9",
+      "2": "print 4",
+      "3": "print 8",
+      "4": "cause a runtime exception on Line 8",
+      "5": "print 6"
+    }
+  },
+  "Q150": {
+    "Category": "OOP",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "class A:",
+      "    def __init__(self):",
+      "        self.i = 0",
+      "        self.calc(10)",
+      "        print('i from A is', self.i)",
+      "    def calc(self, i):",
+      "        self.i = 2 * i",
+      "class B(A):",
+      "    def __init__(self):",
+      "        super().__init__()",
+      "    def calc(self, i):",
+      "        self.i = 3 * i",
+      "b = B()"
+    ],
+    "Options": {
+      "1": "i from A is 20",
+      "2": "i from A is 30",
+      "3": "i from B is 30",
+      "4": "i from A is 0"
+    }
+  },
+  
+  "Q151": {
+    "Category": "OOP",
+    "Question": "You want to check, whether the variable obj contains an object of the class A. Which of the following statements can you use?",
+    "Options": {
+      "1": "isinstance(obj, A)",
+      "2": "A.isinstance(obj)",
+      "3": "obj.isinstance(A)",
+      "4": "isinstance(A, obj)"
+    }
+  },
+  "Q152": {
+    "Category": "Basics",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x = '\'' ",
+      "print(len(x))"
+    ],
+    "Options": {
+      "1": "1",
+      "2": "2",
+      "3": "0",
+      "4": "The code is erroneous."
+    }
+  },
+  "Q153": {
+    "Category": "Modules",
+    "Question": "Consider the following file module.py. What will be the output, if you run it?",
+    "CodeSnippet": [
+      "module.py:",
+      "print(__name__)"
+    ],
+    "Options": {
+      "1": "main",
+      "2": "__main__",
+      "3": "__module__",
+      "4": "module"
+    }
+  },
+  "Q154": {
+    "Category": "I/O",
+    "Question": "Which of the following commands can be used to read n characters from a file?",
+    "Options": {
+      "1": "n = file.readline()",
+      "2": "file.read(n)",
+      "3": "file.readline(n)",
+      "4": "n = file.read()"
+    }
+  },
+  "Q155": {
+    "Category": "I/O",
+    "Question": "You want to write a code snippet to read the total data from a text file and print it to the monitor. What snippet would you insert in the line indicated below?",
+    "CodeSnippet": [
+      "try:",
+      "    file = open('data.txt', 'r')",
+      "    # insert your code here",
+      "    print(data)",
+      "except:",
+      "    print('Something went wrong!')"
+    ],
+    "Options": {
+      "1": "data = file.read()",
+      "2": "data = file.load()",
+      "3": "data = file.readline()",
+      "4": "data = file.readlines()"
+    }
+  },
+
+  "Q156": {
+    "Category": "Control Flow",
+    "Question": "The ABC organics company needs a simple program that their call center will use to enter survey data for a new coffee variety. The program must accept input and return the average rating based on a five-star scale. The output must be rounded to two decimal places. You need to complete the code to meet the requirements. What should you insert instead of xxx, Yyy and zzz?",
+    "CodeSnippet": [
+      "sum = count = done = 0",
+      "average = 0.0",
+      "while done != -1:",
+      "    rating = XXX",
+      "    if rating == -1:",
+      "        break",
+      "    sum += rating",
+      "    count += 1",
+      "    average = float(sum / count)",
+      "YYY + ZZZ"
+    ],
+    "Options": {
+      "1": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
+      "2": "XXX -> input('Enter next rating (1-5), -1 for done')\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
+      "3": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')",
+      "4": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> output('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
+      "5": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> printline('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')",
+      "6": "XXX -> print(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')"
+    }
+  },
+  
+  "Q158": {
+    "Category": "Operators",
+    "Question": "You develop a Python application for your company. You have the following code. Which of the following expressions is equivalent to the expression in the function?",
+    "CodeSnippet": [
+      "def main(a, b, c, d):",
+      "    value = a + b * c - d",
+      "    return value"
+    ],
+    "Options": {
+      "1": "(a + b) * (c - d)",
+      "2": "None of the above.",
+      "3": "a + (b * c) - d",
+      "4": "a + ((b * c) - d)"
+    }
+  },
+  "Q159": {
+    "Category": "Modules",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "import math",
+      "result = math.e != math.pow(2, 4)",
+      "print(int(result))"
+    ],
+    "Options": {
+      "1": "0",
+      "2": "True",
+      "3": "1",
+      "4": "False"
+    }
+  },
+  "Q160": {
+    "Category": "Basics",
+    "Question": "The digraph written as #! is used to:",
+    "Options": {
+      "1": "create a docstring.",
+      "2": "make a particular module entity a private one.",
+      "3": "tell a Unix or Unix-like OS how to execute the contents of a Python file.",
+      "4": "tell an MS Windows OS how to execute the contents of a Python file."
+    }
+  },
+  "Q161": {
+    "Category": "Modules",
+    "Question": "What is true about updating already installed Python packages?",
+    "Options": {
+      "1": "It can be done by reinstall the package using the reinstall command.",
+      "2": "It can be done only by uninstalling the package once again.",
+      "3": "It's performed by the install command accompanied by the -U option.",
+      "4": "It's an automatic process which doesn't require any user attention."
+    }
+  },
+  "Q162": {
+    "Category": "Modules",
+    "Question": "Select the true statements. Choose two.",
+    "Options": {
+      "1": "The system function from the platform module returns a string with your OS name.",
+      "2": "The version function from the platform module returns a string with your Python version.",
+      "3": "The version function from the platform module returns a string with your OS version.",
+      "4": "The processor function from the platform module returns an integer with the number of processes currently running in your OS."
+    }
+  },
+
+  "Q163": {
+    "Category": "Modules",
+    "Question": "A PWG-lead repository, collecting open-source Python code, is called:",
+    "Options": {
+      "1": "PyRep",
+      "2": "PyCR",
+      "3": "PWGR",
+      "4": "PyPI"
+    }
+  },
+  "Q164": {
+    "Category": "Error Handling",
+    "Question": "The part of your code where you think an exception may occur should be placed inside:",
+    "Options": {
+      "1": "the except: branch",
+      "2": "the exception: branch",
+      "3": "the try: branch"
+    }
+  },
+  "Q165": {
+    "Category": "Functions",
+    "Question": "isalnum() checks if a string contains only letters and digits, and this is:",
+    "Options": {
+      "1": "A function",
+      "2": "A module",
+      "3": "A method"
+    }
+  },
+  "Q166": {
+    "Category": "OOP",
+    "Question": "A subclass is usually:",
+    "Options": {
+      "1": "More general than its superclass.",
+      "2": "More specialized than its superclass.",
+      "3": "A twin of its superclass."
+    }
+  },
+  "Q167": {
+    "Category": "Control Flow",
+    "Question": "What is the expected output of the following code?\nfoo = [1 + i for 1 in range(5)]\nprint(foo)",
+    "Options": {
+      "1": "[1, 3, 5, 7, 9]",
+      "2": "[0, 2, 4, 6, 8]",
+      "3": """
+      0
+      2
+      4
+      6
+      8
+      """,
+      "4": "None of the above."
+    }
+  },
+  "Q169": {
+    "Category": "Functions",
+    "Question": "Select the true statements about the map() function.\nChoose two.",
+    "Options": {
+      "1": "The map() function can accept only two arguments.",
+      "2": "The first map() function argument can be a list.",
+      "3": "The map() function can accept more than two arguments.",
+      "4": "The second map() function argument can be a list."
+    }
+  },
+  "Q170": {
+    "Category": "Modules",
+    "Question": "What happens if you run the following code, assuming that the d directory already exists?\nimport os\nos.mkdir(\"a/b/c/d\")",
+    "Options": {
+      "1": "A DirectoryExistsError exception will be raised.",
+      "2": "A FileExistsError exception will be raised.",
+      "3": "Python will overwrite the existing directory."
+    }
+  },
+  "Q172": {
+    "Category": "Modules",
+    "Question": "What is the expected output of the following code?\nfrom datetime import datetime\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))",
+    "Options": {
+      "1": "19/November/27 11:27:22",
+      "2": "2019/11/27 11:27:22",
+      "3": "2019/Nov/27 11:27:22",
+      "4": "19/11/27 11:27:22"
+    }
+  },
+  "Q173": {
+    "Category": "OOP",
+    "Question": "What is the expected output of the following code?\nclass A:\n  def __init__(self, x):\n    self._a = x + 1\na = A(9)\nprint(a._a)",
+    "Options": {
+      "1": "1",
+      "2": "0",
+      "3": "The code will raise an AttributeError exception.",
+      "4": "2"
+    }
+  },
+
+  
+  "Q175": {
+    "Category": "Basics",
+    "Question": "Which of the following statements are true about the __pycache__ directory/folder? (Select two answers.)",
+    "Options": {
+      "1": "It has to be created manually by the module's creator.",
+      "2": "It is created automatically.",
+      "3": "It contains semi-compiled module code.",
+      "4": "It has to be created manually by the module's user."
+    }
+  },
+  "Q177": {
+    "Category": "Data Types",
+    "Question": "Which of the following are valid Python string literals? (Select two answers.)",
+    "Options": {
+      "1": ""King's Cross Station"",
+      "2": "\",
+      "3":"'All the king's horses'",
+      "4":  """The Knights Who Say 'Ni!'"""
+    }
+  },
+  "Q178": {
+    "Category": "Data Types",
+    "Question": "Which of the following snippets outputs 123 to the screen? (Select two answers.)",
+    "Options": {
+      "1": "tmp = \"321\".sort()\nprint(str(tmp))",
+      "2": "print(''.join(sorted(\"321\")))",
+      "3": "print(sorted("321"))",
+      "4": "tmp = list("321")\ntmp.sort()\nprint(''.join(tmp))"
+    }
+  },
+  "Q179": {
+    "Category": "Operators",
+    "Question": "Which of the following expressions evaluates to True and raises no exception?",
+    "Options": {
+      "1": "'9' * 3 > '9'*9",
+      "2": "'9'* 1 < 1 * 2",
+      "3": " 10!= '1' + '0' ",
+      "4": " 'A1'*2 != 2 * 'A1' "
+    }
+  },
+  "Q181": {
+    "Category": "Control Flow",
+    "Question": "What is the expected output of the following code?\nplane = "Cessna"\ncounter = 0\nfor c in plane * 2:\n  if c in ["e", "a"]:\n    counter += 1\nprint(counter)",
+    "Options": {
+      "1": "The code is erroneous and cannot be run.",
+      "2": "0",
+      "3": "4",
+      "4": "2"
+    }
+  },
+  "Q182": {
+    "Category": "Functions",
+    "Question": "Which of the following lines contain valid Python code? (Select two answers.)",
+    "Options": {
+      "1": "lambda(a,b): return a if a < b else b",
+      "2": "lambda a,b: True",
+      "3": "lambda a,b: a if a < b else b",
+      "4": "lambda a,b = a if a < b else b"
+    }
+  },
+  "Q183": {
+    "Category": "Functions",
+    "Question": "What is the expected output of the following code?\nv = [1, 2, 3]\ndef g(a, b, m):\n  return m(a, b)\nprint(g(1, 1, lambda x, y: v[x:y + 1]))",
+    "Options": {
+      "1": "[2]",
+      "2": "[1]",
+      "3": "[]",
+      "4": "[3]"
+    }
+  },
+  "Q185": {
+    "Category": "Error Handling",
+    "Question": "The system that allows you to diagnose input/output errors in Python is called:",
+    "Options": {
+      "1": "errcode",
+      "2": "errno",
+      "3": "error_number",
+      "4": "error_string"
+    }
+  },
+
+  "Q186": {
+    "Category": "Error Handling",
+    "Question": "What is the expected behavior of the following program?\n\ntry:\n  print(5/0)\n  break\nexcept:\n  print(\"Sorry, something went wrong...\")\nexcept (ValueError, ZeroDivisionError):\n  print(\"Too bad...\")",
+    "Options": {
+      "1": "The program will raise an exception handled by the first except block.",
+      "2": "The program will cause a ValueError exception and output a default error message.",
+      "3": "The program will cause a SyntaxError exception.",
+      "4": "The program will cause a ValueError exception and output the following message: Too bad...",
+      "5": "The program will cause a ZeroDivisionError exception and output the following message: Too bad...",
+       "6": "The program will cause a ZeroDivisionError exception and output a default error message"
+    }
+  },
+  
+  "Q187": {
+    "Category": "Error Handling",
+    "Question": "What is the expected output of the following code?\n\ndata = [261, 321]\ntry:\n  print(data[-3])\nexcept Exception as exception:\n  print(exception.args)\nelse:\n  print(\"('success',)\")",
+    "Options": {
+      "1": "('list index out of range',)",
+      "2": "261",
+      "3": "321",
+      "4": "('success',)"
+    }
+  },
+  
+  "Q188": {
+    "Category": "Error Handling",
+    "Question": "What is the output of the following program if the user enters kangaroo at the first prompt and 0 at the second prompt?\n\n[...code snippet...]",
+    "Options": {
+      "1": "4.0"
+      "2": "Do not divide by zero!",
+      "4": "Wrong value.",
+      "4": "Error.Error.Error."
+      
+    }
+  },
+  
+  "Q191": {
+    "Category": "OOP",
+    "Question": "Given the code below, indicate a method which will correctly provide the value of the rack field?\n\nclass Storage:\n  def __init__(self):\n    self.rack = 1\n\n# Insert a method here\n\nstuff = Storage()\nprint(stuff.get())",
+    "Options": {
+      "1": "def get(self):\n  return rack",
+      "2": "def get():\n  return rack",
+      "3": "def get(self):\n  return self.rack",
+      "4": "def get():\n  return self.rack"
+    }
+  },
+  
+  "Q192": {
+    "Category": "OOP",
+    "Question": "What is the expected output of the following code?\n\nclass Content:\n  title = \"None\"\n\n  def __init__(self, this):\n    self.name = this + \" than \" + Content.title\n\ntext_1 = Content(\"Paper\")\ntext_2 = Content(\"Article\")\nprint(text_1.title == text_2.name)",
+    "Options": {
+      "1": "The code is erroneous and will raise an exception.",
+      "2": "It outputs False",
+      "3": "It outputs True",
+      "4": "It outputs None"
+    }
+  },
+  
+  "Q193": {
+    "Category": "OOP",
+    "Question": "What is the expected output of the following code?\n\nclass Economy:\n  def __init__(self):\n    self.econ_attr = True\n\nclass Business(Economy):\n  def __init__(self):\n    super().__init__()\n    self.busn_attr = False\n\necon_a = Economy()\necon_b = Economy()\nbusn_a = Business()\nbusn_b = busn_a\nprint(isinstance(busn_a, Economy) and isinstance(econ_a, Business), end=\" \")\nprint(busn_b is busn_a or econ_a is econ_b)",
+    "Options": {
+      "1": "True False",
+      "2": "False True",
+      "3": "True True",
+      "4": "False False"
+    }
+  },
+  
+  "Q196": {
+    "Category": "OOP",
+    "Question": "Which of the following variables will Python consider to be private?",
+    "Options": {
+      "1": "_privatedata_",
+      "2": "privatedata__",
+      "3": "private_data",
+      "4": "__privatedata"
+    }
+  },
+  
+  "Q107": {
+    "Category": "Functions",
+    "Question": "What snippet would you insert in the line indicated below?",
+    "CodeSnippet": [
+      "def func(number):",
+      "    # insert your code here",
+      "print(func(7))"
+    ],
+    "Options": {
+      "1": "print(number)",
+      "2": "print('number')",
+      "3": "return number",
+      "4": "return 'number'"
+    }
+  },
+  
+  "Q112": {
+    "Category": "Operators",
+    "Question": "What would you insert instead of ??? so that the program checks for even numbers?",
+    "CodeSnippet": [
+      "if ??? :",
+      "    print('x is an even number')"
+    ],
+    "Options": {
+      "1": "x % 2 == 1",
+      "2": "x % x == 0",
+      "3": "x % 1 == 2",
+      "4": "x % 2 == 0",
+      "5": "x % even == True"
+    }
+  },
+  "Q114": {
+    "Category": "Control Flow",
+    "Question": "Which of the following for loops would output the below number pattern?",
+    "CodeSnippet": [
+      "11111",
+      "22222",
+      "33333",
+      "44444",
+      "55555"
+    ],
+    "Options": {
+      "1": "for i in range(1, 6): print(i, i, i, i, 1)",
+      "2": "for i in range(1, 6): print(str(i) * 5)",
+      "3": "for i in range(0, 5): print(str(i) * 5)",
+      "4": "for i in range(1, 5): print(str(i) * 5)"
+    }
+  },
+  "Q115": {
+    "Category": "Functions",
+    "Question": "What is the output of the following code snippet?",
+    "CodeSnippet": [
+      "def test(x=1, y=2):",
+      "    x = x + y",
+      "    y += 1",
+      "    print(x, y)",
+      "test(2, 1)"
+    ],
+    "Options": {
+      "1": "The code is erroneous.",
+      "2": "33",
+      "3": "23",
+      "4": "13",
+      "5": "32"
+    }
+  },
+  "Q123": {
+    "Category": "Functions",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "def func(num):",
+      "    res = '*'",
+      "    for _ in range(num):",
+      "        res += res",
+      "    return res",
+      "for x in func(2):",
+      "    print(x, end='')"
+    ],
+    "Options": {
+      "1": "*"
+      "2": "The code is erroneous.",
+      "3": "****",
+      "4": "**"
+      
+    }
+  },
+
+  "Q128": {
     "Category": "OOP",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
       "class Test:",
-      "    def __init__(self, s='Welcome'):",
-      "        self.s = s",
-      "    def print(self):",
-      "        print(self.s)",
-      "x = Test()",
-      "x.print()"
+      "    def __init__(self, id):",
+      "        self.id = id",
+      "id = 100",
+      "X = Test(23)",
+      "print(x.id)"
     ],
     "Options": {
-      "1": "The code is erroneous, because the constructor is called without an argument.",
-      "2": "Nothing",
-      "3": "Welcome",
-      "4": "The code is erroneous, because the print method is called without an argument."
+      "1": "None of the above.",
+      "2": "23",
+      "3": "100",
+      "4": "The code is erroneous."
     }
   },
-  "Q130": {
+  "Q132": {
     "Category": "OOP",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
       "class A:",
-      "    pass",
+      "    def __init__(self, x=0):",
+      "        self.x = x",
+      "    def func(self):",
+      "        self.x += 1",
       "class B(A):",
-      "    pass",
-      "class C(B):",
-      "    pass",
-      "print(issubclass(C, A))"
+      "    def __init__(self, y=0):",
+      "        A.__init__(self, 3)",
+      "        self.y = y",
+      "    def func(self):",
+      "        self.y += 1",
+      "b = B()",
+      "b.func()",
+      "print(b.x, b.y)"
     ],
     "Options": {
-      "1": "1",
-      "2": "False",
-      "3": "0"
-      "4": "The code is erronous."
-      "5": True
+      "1": "3 0",
+      "2": "2 0",
+      "3": "4 1",
+      "4": "3 1",
+      "5": "4 0"
     }
   },
-  "Q131": {
+  "Q134": {
+    "Category": "Data Types",
+    "Question": "The value thirty point eleven times ten raised to the power of nine should be written as:",
+    "Options": {
+      "1": "30.11E9",
+      "2": "30E11.9",
+      "3": "30.11*10^9",
+      "4": "30.11E9.0"
+    }
+  },
+  "Q135": {
+    "Category": "Data Types",
+    "Question": "The 0o prefix means that the number after it is denoted as:",
+    "Options": {
+      "1": "octal",
+      "2": "decimal",
+      "3": "hexadecimal",
+      "4": "binary"
+    }
+  },
+  "Q138": {
+    "Category": "Modules",
+    "Question": "Which module in Python supports regular expressions?",
+    "Options": {
+      "1": "pyregex",
+      "2": "None of the above.",
+      "3": "re",
+      "4": "regex"
+    }
+  },
+
+  
+  "Q142": {
+    "Category": "Operators",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x=1/2+3//3+4**2",
+      "print(x)"
+    ],
+    "Options": {
+      "1": "8",
+      "2": "17.5",
+      "3": "17",
+      "4": "8.5"
+    }
+  },
+  "Q147": {
+    "Category": "Data Aggregates",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x = [0, 1, 2]",
+      "x.insert(0, 1)",
+      "del x[1]",
+      "print(sum(x))"
+    ],
+    "Options": {
+      "1": "3",
+      "2": "5",
+      "3": "2",
+      "4": "4"
+    }
+  },
+  "Q148": {
+    "Category": "Control Flow",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x = True",
+      "y = False",
+      "z = False",
+      "if not x or y:",
+      "    print(1)",
+      "elif not x or not y and z:",
+      "    print(2)",
+      "elif not x or y or not y and x:",
+      "    print(3)",
+      "else:",
+      "    print(4)"
+    ],
+    "Options": {
+      "1": "2",
+      "2": "3",
+      "3": "1",
+      "4": "4"
+    }
+  },
+  "Q157": {
+    "Category": "Error Handling",
+    "Question": "The Exception class contains a property named args and it is a:",
+    "Options": {
+      "1": "string",
+      "2": "list",
+      "3": "tuple",
+      "4": "dictionary"
+    }
+  },
+  "Q168": {
+    "Category": "Functions",
+    "Question": "What is the expected output of the following code?",
+    "CodeSnippet": [
+      "x = lambda a, b: a ** b",
+      "print(x(2, 10))"
+    ],
+    "Options": {
+      "1": "SyntaxError",
+      "2": "1024",
+      "3": "2222222222"
+    }
+  },
+  "Q171": {
+    "Category": "Error Handling",
+    "Question": "Entering the try: block implies that:",
+    "Options": {
+      "1": "the block will be omitted.",
+      "2": "none of the instructions from this block will be executed.",
+      "3": "all of the instructions from this block will be executed.",
+      "4": "some of the instructions from this block may not be executed."
+    }
+  },
+  "Q174": {
+    "Category": "I/O",
+    "Question": "Assuming that the open() invocation has gone successfully, the following snippet will:",
+    "CodeSnippet": [
+      "for x in open('file', 'rt'):",
+      "    print(x)"
+    ],
+    "Options": {
+      "1": "read the whole file at once.",
+      "2": "cause an exception.",
+      "3": "read the file line by line.",
+      "4": "read the file character by character."
+    }
+  },
+  "Q176": {
+    "Category": "Basics",
+    "Question": "Which of the following statements are true? (Select two answers.)",
+    "Options": {
+      "1": "The input() function reads data from the stdin stream.",
+      "2": "There are three pre-opened file streams.",
+      "3": "The readlines() function returns a string.",
+      "4": "The first argument of the open() function is an integer value."
+    }
+  },
+  "Q180": {
+    "Category": "Data Aggregates",
+    "Question": "How many elements does the L list contain?",
+    "CodeSnippet": [
+      "L = [i for i in range(-1, -2)]"
+    ],
+    "Options": {
+      "1": "zero",
+      "2": "one",
+      "3": "two",
+      "4": "three"
+    }
+  },
+
+  
+  "Q184": {
+    "Category": "I/O",
+    "Question": "Which method is used to break the connection between the file handle and a physical file?",
+    "Options": {
+      "1": "disconnect()",
+      "2": "lock()",
+      "3": "shutup()",
+      "4": "close()"
+    }
+  },
+  "Q189": {
+    "Category": "Modules",
+    "Question": "A function named f() is included in a module named m and the module is part of a package named p. Which of the following code snippets allows you to properly invoke the function? (Select two answers.)",
+    "Options": {
+      "1": "import p.m.f",
+      "2": "import p.m\np.m.f()",
+      "3": "from p.m import f",
+      "4": "import p\nm.f()"
+    }
+  },
+  "Q190": {
+    "Category": "Modules",
+    "Question": "You need to find out if a hardware platform utilizes the x86 or arm CPU. Which method from the module platform can you use? (Select two answers.)",
+    "Options": {
+      "1": "hardware()",
+      "2": "platform()",
+      "3": "node()",
+      "4": "processor()"
+    }
+  },
+  "Q194": {
+    "Category": "OOP",
+    "Question": "What is the expected behavior of the following snippet?",
+    "CodeSnippet": [
+      "class Team:",
+      "    def show_ID(self):",
+      "        print(self.get_ID())",
+      "    def get_ID(self):",
+      "        return \"anonymous\"",
+      "class A(Team):",
+      "    def get_ID(self):",
+      "        return \"Alpha\"",
+      "a = A()",
+      "a.show_ID()"
+    ],
+    "Options": {
+      "1": "The code will print: anonymous",
+      "2": "The code will print: Alpha",
+      "3": "The code will raise an AttributeError",
+      "4": "The code will raise a TypeError"
+    }
+  },
+  "Q195": {
     "Category": "OOP",
     "Question": "What is the expected output of the following code?",
     "CodeSnippet": [
-      "class A:",
-      "    def __init__(self, name):",
-      "        self.name = name",
-      "a = A('class')",
-      "print(a)"
+      "class Cat:",
+      "    Species = 1",
+      "    def get_species(self):",
+      "        return 'kitty'",
+      "class Tiger(Cat):",
+      "    def get_species(self):",
+      "        return 'tiggy'",
+      "    def set_species(self):",
+      "        pass",
+      "creature = Tiger()",
+      "print(hasattr(creature, \"Species\"),",
+      "      hasattr(Cat, \"set_species\"))"
     ],
     "Options": {
-      "1": "A number.",
-      "2": "name",
-      "3": "class",
-      "4": "A string ending with a long hexadecimal number."
+      "1": "False True",
+      "2": "True False",
+      "3": "False False",
+      "4": "True True"
     }
-  },
-  
-  {
-    "Q133": {
-      "Category": "Modules",
-      "Question": "Knowing that a function named randint() resides in the module named random, choose the proper way to import it:",
-      "Options": {
-        "1": "from random import randint",
-        "2": "from randint import random",
-        "3": "import randint",
-        "4": "import randint from random"
-      }
-    },
-    "Q136": {
-      "Category": "Data Types",
-      "Question": "What is the expected output of the following code if the user enters 2 and 4 ?",
-      "CodeSnippet": [
-        "x = input()",
-        "y = input()",
-        "print(x + y)"
-      ],
-      "Options": {
-        "1": "6",
-        "2": "2",
-        "3": "24",
-        "4": "4"
-      }
-    },
-    "Q137": {
-      "Category": "Data Types",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "z=y=x=1",
-        "print(x, y, z, sep='*')"
-      ],
-      "Options": {
-        "1": "The code is erroneous.",
-        "2": "1 1 1",
-        "3": "1*1*1",
-        "4": "111*"
-        "5": "x y z"
-        "6": "x*y*z"
-      }
-    },
-    "Q139": {
-      "Category": "Modules",
-      "Question": "When a module is imported, its contents:",
-      "Options": {
-        "1": "are ignored.",
-        "2": "are executed depending on the contents.",
-        "3": "are executed as many times as they are imported.",
-        "4": "are executed once."
-      }
-    },
-    "Q140": {
-      "Category": "Error Handling",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "num = '7' * '7'",
-        "print(num)"
-      ],
-      "Options": {
-        "1": "49",
-        "2": "7777777",
-        "3": "77",
-        "4": "The code is erroneous."
-      }
-    },
-    "Q141": {
-      "Category": "Operators",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x=1//5+1/5",
-        "print(x)"
-      ],
-      "Options": {
-        "1": "0.0",
-        "2": "0.2",
-        "3": "0.4",
-        "4": "0"
-      }
-    },
-    "Q143": {
-      "Category": "Functions",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "def func(p1, p2):",
-        "    p1 = 1",
-        "    p2[0] = 42",
-        "x = 3",
-        "y = [1, 2, 3]",
-        "func(x, y)",
-        "print(x, y[0])"
-      ],
-      "Options": {
-        "1": "1 1",
-        "2": "1 42",
-        "3": "The code is erronous",
-        "4": "3 42"
-        "5": "3 1"
-      }
-    },
-    "Q144": {
-      "Category": "Modules",
-      "Question": "What is the correct command to shuffle the following list?",
-      "CodeSnippet": [
-        "import random",
-        "people = ['Peter', 'Paul', 'Mary', 'Jane']",
-       
-      "Options": {
-        "1": "random.shuffle(people)",
-        "2": "shuffle(people)",
-        "3": "random.shuffleList(people)",
-        "4": "people.shuffle()"
-      }
-    },
-  
-  {
-    "Q145": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]",
-        "def func(data):",
-        "    res = data[0][0]",
-        "    for da in data:",
-        "        for d in da:",
-        "            if res < d:",
-        "                res = d",
-        "    return res",
-        "print(func(x[0]))"
-      ],
-      "Options": {
-        "1": "4",
-        "2": "6",
-        "3": "2",
-        "4": "8"
-        "5": "The code is erroneous"
-      }
-    },
-    "Q146": {
-      "Category": "Data Aggregates",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "nums = [3, 4, 5, 20, 5, 25, 1, 3]",
-        "nums.pop(1)",
-        "print(nums)"
-      ],
-      "Options": {
-        "1": "[1, 3, 3, 4, 5, 5, 20, 25]"
-        "2": "[3, 4, 5, 20, 5, 25, 1, 3]",
-        "3": "[1, 3, 4, 5, 20, 5, 25]",
-        "4": "[3, 5, 20, 5, 25, 1, 3]",
-        "5": "[3, 1, 25, 5, 20, 5, 4]"
-      }
-    },
-    "Q149": {
-      "Category": "Functions",
-      "Question": "What is the expected behavior of the following snippet?",
-      "CodeSnippet": [
-        "x=1",
-        "def a(x):",
-        "    return 2 * x",
-        "x = 2 + a(x)",
-        "print(a(x))"
-      ],
-      "Options": {
-        "1": "cause a runtime exception on Line 9",
-        "2": "print 4",
-        "3": "print 8",
-        "4": "cause a runtime exception on Line 8",
-        "5": "print 6"
-      }
-    },
-    "Q150": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "class A:",
-        "    def __init__(self):",
-        "        self.i = 0",
-        "        self.calc(10)",
-        "        print('i from A is', self.i)",
-        "    def calc(self, i):",
-        "        self.i = 2 * i",
-        "class B(A):",
-        "    def __init__(self):",
-        "        super().__init__()",
-        "    def calc(self, i):",
-        "        self.i = 3 * i",
-        "b = B()"
-      ],
-      "Options": {
-        "1": "i from A is 20",
-        "2": "i from A is 30",
-        "3": "i from B is 30",
-        "4": "i from A is 0"
-      }
-    },
-    "Q151": {
-      "Category": "OOP",
-      "Question": "You want to check, whether the variable obj contains an object of the class A. Which of the following statements can you use?",
-      "Options": {
-        "1": "isinstance(obj, A)",
-        "2": "A.isinstance(obj)",
-        "3": "obj.isinstance(A)",
-        "4": "isinstance(A, obj)"
-      }
-    },
-    "Q152": {
-      "Category": "Basics",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x = '\'' ",
-        "print(len(x))"
-      ],
-      "Options": {
-        "1": "1",
-        "2": "2",
-        "3": "0",
-        "4": "The code is erroneous."
-      }
-    },
-    "Q153": {
-      "Category": "Modules",
-      "Question": "Consider the following file module.py. What will be the output, if you run it?",
-      "CodeSnippet": [
-        "module.py:",
-        "print(__name__)"
-      ],
-      "Options": {
-        "1": "main",
-        "2": "__main__",
-        "3": "__module__",
-        "4": "module"
-      }
-    },
-    "Q154": {
-      "Category": "I/O",
-      "Question": "Which of the following commands can be used to read n characters from a file?",
-      "Options": {
-        "1": "n = file.readline()",
-        "2": "file.read(n)",
-        "3": "file.readline(n)",
-        "4": "n = file.read()"
-      }
-    },
-    "Q155": {
-      "Category": "I/O",
-      "Question": "You want to write a code snippet to read the total data from a text file and print it to the monitor. What snippet would you insert in the line indicated below?",
-      "CodeSnippet": [
-        "try:",
-        "    file = open('data.txt', 'r')",
-        "    # insert your code here",
-        "    print(data)",
-        "except:",
-        "    print('Something went wrong!')"
-      ],
-      "Options": {
-        "1": "data = file.read()",
-        "2": "data = file.load()",
-        "3": "data = file.readline()",
-        "4": "data = file.readlines()"
-      }
-    },
-  
-  {
-    "Q156": {
-      "Category": "Control Flow",
-      "Question": "The ABC organics company needs a simple program that their call center will use to enter survey data for a new coffee variety. The program must accept input and return the average rating based on a five-star scale. The output must be rounded to two decimal places. You need to complete the code to meet the requirements. What should you insert instead of xxx, Yyy and zzz?",
-      "CodeSnippet": [
-        "sum = count = done = 0",
-        "average = 0.0",
-        "while done != -1:",
-        "    rating = XXX",
-        "    if rating == -1:",
-        "        break",
-        "    sum += rating",
-        "    count += 1",
-        "    average = float(sum / count)",
-        "YYY + ZZZ"
-      ],
-      "Options": {
-        "1": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
-        "2": "XXX -> input('Enter next rating (1-5), -1 for done')\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
-        "3": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')",
-        "4": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> output('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2d')",
-        "5": "XXX -> float(input('Enter next rating (1-5), -1 for done'))\nYYY -> printline('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')",
-        "6": "XXX -> print(input('Enter next rating (1-5), -1 for done'))\nYYY -> print('The average star rating for the new coffee is:')\nZZZ -> format(average, '.2f')"
-      }
-    },
-    "Q158": {
-      "Category": "Operators",
-      "Question": "You develop a Python application for your company. You have the following code. Which of the following expressions is equivalent to the expression in the function?",
-      "CodeSnippet": [
-        "def main(a, b, c, d):",
-        "    value = a + b * c - d",
-        "    return value"
-      ],
-      "Options": {
-        "1": "(a + b) * (c - d)",
-        "2": "None of the above.",
-        "3": "a + (b * c) - d",
-        "4": "a + (b - c) * d"
-      }
-    },
-    "Q159": {
-      "Category": "Modules",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "import math",
-        "result = math.e != math.pow(2, 4)",
-        "print(int(result))"
-      ],
-      "Options": {
-        "1": "0",
-        "2": "True"
-        "3": "1"
-        "4": "False"
-      }
-    },
-    "Q160": {
-      "Category": "Basics",
-      "Question": "The digraph written as #! is used to:",
-      "Options": {
-        "1": "create a docstring.",
-        "2": "make a particular module entity a private one.",
-        "3": "tell a Unix or Unix-like OS how to execute the contents of a Python file.",
-        "4": "tell an MS Windows OS how to execute the contents of a Python file."
-      }
-    },
-    "Q161": {
-      "Category": "Modules",
-      "Question": "What is true about updating already installed Python packages?",
-      "Options": {
-        "1": "It can be done by reinstall the package using the reinstall command.",
-        "2": "It can be done only by uninstalling the package once again.",
-        "3": "It's performed by the install command accompanied by the -U option.",
-        "4": "It's an automatic process which doesn't require any user attention."
-      }
-    },
-    "Q162": {
-      "Category": "Modules",
-      "Question": "Select the true statements. Choose two.",
-      "Options": {
-        "1": "The system function from the platform module returns a string with your OS name.",
-        "2": "The version function from the platform module returns a string with your Python version.",
-        "3": "The version function from the platform module returns a string with your OS version.",
-        "4": "The processor function from the platform module returns an integer with the number of processes currently running in your OS."
-      }
-    },
-  
-    "Q163": {
-      "Category": "Modules",
-      "Question": "A PWG-lead repository, collecting open-source Python code, is called:",
-      "Options": {
-        "1": "PyRep",
-        "2": "PyCR",
-        "3": "PWGR",
-        "4": "PyPI"
-      }
-    },
-    "Q164": {
-      "Category": "Error Handling",
-      "Question": "The part of your code where you think an exception may occur should be placed inside:",
-      "Options": {
-        "1": "the except: branch",
-        "2": "the exception: branch",
-        "3": "the try: branch"
-      }
-    },
-    "Q165": {
-      "Category": "Functions",
-      "Question": "isalnum() checks if a string contains only letters and digits, and this is:",
-      "Options": {
-        "1": "A function",
-        "2": "A module",
-        "3": "A method"
-      }
-    },
-    "Q166": {
-      "Category": "OOP",
-      "Question": "A subclass is usually:",
-      "Options": {
-        "1": "More general than its superclass.",
-        "2": "More specialized than its superclass.",
-        "3": "A twin of its superclass."
-      }
-    },
-    "Q167": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?\nfoo = [1 + i for 1 in range(5)]\nprint(foo)",
-      "Options": {
-        "1": "[11, 3, 5, 7, 9]",
-        "2": "[10, 2, 3, 5, 8]",
-        "3": "[2, 3, 4, 5, 6]",
-        "4": "None of the above."
-      }
-    },
-    "Q169": {
-      "Category": "Functions",
-      "Question": "Select the true statements about the map() function.\nChoose two.",
-      "Options": {
-        "1": "The map() function can accept only two arguments.",
-        "2": "The first map() function argument can be a list.",
-        "3": "The map() function can accept more than two arguments.",
-        "4": "The second map() function argument can be a list."
-      }
-    },
-    "Q170": {
-      "Category": "Modules",
-      "Question": "What happens if you run the following code, assuming that the d directory already exists?\nimport os\nos.mkdir(\"a/b/c/d\")",
-      "Options": {
-        "1": "A DirectoryExistsError exception will be raised.",
-        "2": "A FileExistsError exception will be raised.",
-        "3": "Python will overwrite the existing directory."
-      }
-    },
-    "Q172": {
-      "Category": "Modules",
-      "Question": "What is the expected output of the following code?\nfrom datetime import datetime\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))",
-      "Options": {
-        "1": "19/November/27 11:27:22",
-        "2": "2019/11/27 11:27:22",
-        "3": "2019/Nov/27 11:27:22",
-        "4": "19/11/27 11:27:22"
-      }
-    },
-    "Q173": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?\nclass A:\n  def __init__(self, x):\n    self._a = x + 1\na = A(9)\nprint(a._a)",
-      "Options": {
-        "1": "1",
-        "2": "0",
-        "3": "The code will raise an AttributeError exception.",
-        "4": "2"
-      }
-    },
-  
-    
-    "Q175": {
-      "Category": "Basics",
-      "Question": "Which of the following statements are true about the __pycache__ directory/folder? (Select two answers.)",
-      "Options": {
-        "1": "It has to be created manually by the module's creator.",
-        "2": "It is created automatically.",
-        "3": "It contains semi-compiled module code.",
-        "4": "It has to be created manually by the module's user."
-      }
-    },
-    "Q177": {
-      "Category": "Data Types",
-      "Question": "Which of the following are valid Python string literals? (Select two answers.)",
-      "Options": {
-        "1": ""King's Cross Station"",
-        "2": "\",
-        "3":"'All the king's horses'",
-        "4":  """The Knights Who Say 'Ni!'"""
-      }
-    },
-    "Q178": {
-      "Category": "Data Types",
-      "Question": "Which of the following snippets outputs 123 to the screen? (Select two answers.)",
-      "Options": {
-        "1": "tmp = \"321\".sort()\nprint(str(tmp))",
-        "2": "print(''.join(sorted(\"321\")))",
-        "3": "print(sorted("321"))",
-        "4": "tmp = list("321")\ntmp.sort()\nprint(''.join(tmp))"
-      }
-    },
-    "Q179": {
-      "Category": "Operators",
-      "Question": "Which of the following expressions evaluates to True and raises no exception?",
-      "Options": {
-        "1": "'9' * 3 > '9'*9",
-        "2": "'9'* 1 < 1 * 2",
-        "3": " 10!= '1' + '0' ",
-        "4": " 'A1'*2 != 2 * 'A1' "
-      }
-    },
-    "Q181": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?\nplane = "Cessna"\ncounter = 0\nfor c in plane * 2:\n  if c in ["e", "a"]:\n    counter += 1\nprint(counter)",
-      "Options": {
-        "1": "The code is erroneous and cannot be run.",
-        "2": "0",
-        "3": "4",
-        "4": "2"
-      }
-    },
-    "Q182": {
-      "Category": "Functions",
-      "Question": "Which of the following lines contain valid Python code? (Select two answers.)",
-      "Options": {
-        "1": "lambda(a,b): return a if a < b else b",
-        "2": "lambda a,b: True",
-        "3": "lambda a,b: a if a < b else b",
-        "4": "lambda a,b = a if a < b else b"
-      }
-    },
-    "Q183": {
-      "Category": "Functions",
-      "Question": "What is the expected output of the following code?\nv = [1, 2, 3]\ndef g(a, b, m):\n  return m(a, b)\nprint(g(1, 1, lambda x, y: v[x:y + 1]))",
-      "Options": {
-        "1": "[2]",
-        "2": "[1]",
-        "3": "[]",
-        "4": "[3]"
-      }
-    },
-    "Q185": {
-      "Category": "Error Handling",
-      "Question": "The system that allows you to diagnose input/output errors in Python is called:",
-      "Options": {
-        "1": "errcode",
-        "2": "errno",
-        "3": "error_number",
-        "4": "error_string"
-      }
-    },
-  
-    {
-    "Q186": {
-      "Category": "Error Handling",
-      "Question": "What is the expected behavior of the following program?\n\ntry:\n  print(5/0)\n  break\nexcept:\n  print(\"Sorry, something went wrong...\")\nexcept (ValueError, ZeroDivisionError):\n  print(\"Too bad...\")",
-      "Options": {
-        "1": "The program will raise an exception handled by the first except block.",
-        "2": "The program will cause a ValueError exception and output a default error message.",
-        "3": "The program will cause a SyntaxError exception.",
-        "4": "The program will cause a ValueError exception and output the following message: Too bad..."
-        "5": "The program will cause a ZeroDivisionError exception and output the following message: Too bad...",
-         "6": "The program will cause a ZeroDivisionError exception and output a default error message",
-      }
-    },
-    "Q187": {
-      "Category": "Error Handling",
-      "Question": "What is the expected output of the following code?\n\ndata = [261, 321]\ntry:\n  print(data[-3])\nexcept Exception as exception:\n  print(exception.args)\nelse:\n  print(\"('success',)\")",
-      "Options": {
-        "1": "('list index out of range',)",
-        "2": "261",
-        "3": "321",
-        "4": "('success',)"
-      }
-    },
-    "Q188": {
-      "Category": "Error Handling",
-      "Question": "What is the output of the following program if the user enters kangaroo at the first prompt and 0 at the second prompt?\n\n[...code snippet...]",
-      "Options": {
-        "1": "4.0"
-        "2": "Do not divide by zero!",
-        "4": "Wrong value.",
-        "4": "Error.Error.Error.",
-        
-      }
-    },
-    "Q191": {
-      "Category": "OOP",
-      "Question": "Given the code below, indicate a method which will correctly provide the value of the rack field?\n\nclass Storage:\n  def __init__(self):\n    self.rack = 1\n\n# Insert a method here\n\nstuff = Storage()\nprint(stuff.get())",
-      "Options": {
-        "1": "def get(self):\n  return rack",
-        "2": "def get():\n  return rack",
-        "3": "def get(self):\n  return self.rack",
-        "4": "def get():\n  return self.rack"
-      }
-    },
-    "Q192": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?\n\nclass Content:\n  title = \"None\"\n\n  def __init__(self, this):\n    self.name = this + \" than \" + Content.title\n\ntext_1 = Content(\"Paper\")\ntext_2 = Content(\"Article\")\nprint(text_1.title == text_2.name)",
-      "Options": {
-        "1": "The code is erroneous and will raise an exception.",
-        "2": "It outputs False",
-        "3": "It outputs True",
-        "4": "It outputs None"
-      }
-    },
-    "Q193": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?\n\nclass Economy:\n  def __init__(self):\n    self.econ_attr = True\n\nclass Business(Economy):\n  def __init__(self):\n    super().__init__()\n    self.busn_attr = False\n\necon_a = Economy()\necon_b = Economy()\nbusn_a = Business()\nbusn_b = busn_a\nprint(isinstance(busn_a, Economy) and isinstance(econ_a, Business), end=\" \")\nprint(busn_b is busn_a or econ_a is econ_b)",
-      "Options": {
-        "1": "True False",
-        "2": "False True",
-        "3": "True True",
-        "4": "False False"
-      }
-    },
-    "Q196": {
-      "Category": "OOP",
-      "Question": "Which of the following variables will Python consider to be private?",
-      "Options": {
-        "1": "_privatedata_",
-        "2": "privatedata__",
-        "3": "private_data",
-        "4": "__privatedata"
-      }
-    },
-    
-    "Q107": {
-      "Category": "Functions",
-      "Question": "What snippet would you insert in the line indicated below?",
-      "CodeSnippet": [
-        "def func(number):",
-        "    # insert your code here",
-        "print(func(7))"
-      ],
-      "Options": {
-        "1": "print(number)",
-        "2": "print('number')",
-        "3": "return number",
-        "4": "return 'number'"
-      }
-    },
-    "Q112": {
-      "Category": "Operators",
-      "Question": "What would you insert instead of ??? so that the program checks for even numbers?",
-      "CodeSnippet": [
-        "if ??? :",
-        "    print('x is an even number')"
-      ],
-      "Options": {
-        "1": "x % 2 == 1",
-        "2": "x % x == 0",
-        "3": "x % 1 == 2",
-        "4": "x % 2 == 0"
-        "5": "x % 'even' == True"
-      }
-    },
-    "Q114": {
-      "Category": "Control Flow",
-      "Question": "Which of the following for loops would output the below number pattern?",
-      "CodeSnippet": [
-        "11111",
-        "22222",
-        "33333",
-        "44444",
-        "55555"
-      ],
-      "Options": {
-        "1": "for i in range(1, 6): print(i, i, i, i, 1)",
-        "2": "for i in range(1, 6): print(str(i) * 5)",
-        "3": "for i in range(0, 5): print(str(i) * 5)",
-        "4": "for i in range(1, 5): print(str(i) * 5)"
-      }
-    },
-    "Q115": {
-      "Category": "Functions",
-      "Question": "What is the output of the following code snippet?",
-      "CodeSnippet": [
-        "def test(x=1, y=2):",
-        "    x = x + y",
-        "    y += 1",
-        "    print(x, y)",
-        "test(2, 1)"
-      ],
-      "Options": {
-        "1": "The code is erroneous.",
-        "2": "33",
-        "3": "23",
-        "4": "13"
-        "5": "32"
-      }
-    },
-    "Q123": {
-      "Category": "Functions",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "def func(num):",
-        "    res = '*'",
-        "    for _ in range(num):",
-        "        res += res",
-        "    return res",
-        "for x in func(2):",
-        "    print(x, end='')"
-      ],
-      "Options": {
-        "1": "*"
-        "2": "The code is erroneous.",
-        "3": "****",
-        "4": "**"
-        
-      }
-    },
-  
-   {
-    "Q128": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "class Test:",
-        "    def __init__(self, id):",
-        "        self.id = id",
-        "id = 100",
-        "X = Test(23)",
-        "print(x.id)"
-      ],
-      "Options": {
-        "1": "None of the above.",
-        "2": "23",
-        "3": "100",
-        "4": "The code is erroneous."
-      }
-    },
-    "Q132": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "class A:",
-        "    def __init__(self, x=0):",
-        "        self.x = x",
-        "    def func(self):",
-        "        self.x += 1",
-        "class B(A):",
-        "    def __init__(self, y=0):",
-        "        A.__init__(self, 3)",
-        "        self.y = y",
-        "    def func(self):",
-        "        self.y += 1",
-        "b = B()",
-        "b.func()",
-        "print(b.x, b.y)"
-      ],
-      "Options": {
-        "1": "3 0",
-        "2": "2 0",
-        "3": "4 1",
-        "4": "3 1"
-        "5": "4 0"
-      }
-    },
-    "Q134": {
-      "Category": "Data Types",
-      "Question": "The value thirty point eleven times ten raised to the power of nine should be written as:",
-      "Options": {
-        "1": "30.11E9",
-        "2": "30E11.9",
-        "3": "30.11*10^9",
-        "4": "30.11E9.0"
-      }
-    },
-    "Q135": {
-      "Category": "Data Types",
-      "Question": "The 0o prefix means that the number after it is denoted as:",
-      "Options": {
-        "1": "octal",
-        "2": "decimal",
-        "3": "hexadecimal",
-        "4": "binary"
-      }
-    },
-    "Q138": {
-      "Category": "Modules",
-      "Question": "Which module in Python supports regular expressions?",
-      "Options": {
-        "1": "pyregex",
-        "2": "None of the above.",
-        "3": "re",
-        "4": "regex"
-      }
-    },
-  
-    
-    "Q142": {
-      "Category": "Operators",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x=1/2+3//3+4**2",
-        "print(x)"
-      ],
-      "Options": {
-        "1": "8",
-        "2": "17.5",
-        "3": "17",
-        "4": "8.5"
-      }
-    },
-    "Q147": {
-      "Category": "Data Aggregates",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x = [0, 1, 2]",
-        "x.insert(0, 1)",
-        "del x[1]",
-        "print(sum(x))"
-      ],
-      "Options": {
-        "1": "3",
-        "2": "5",
-        "3": "2",
-        "4": "4"
-      }
-    },
-    "Q148": {
-      "Category": "Control Flow",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x = True",
-        "y = False",
-        "z = False",
-        "if not x or y:",
-        "    print(1)",
-        "elif not x or not y and z:",
-        "    print(2)",
-        "elif not x or y or not y and x:",
-        "    print(3)",
-        "else:",
-        "    print(4)"
-      ],
-      "Options": {
-        "1": "2",
-        "2": "3",
-        "3": "1",
-        "4": "4"
-      }
-    },
-    "Q157": {
-      "Category": "Error Handling",
-      "Question": "The Exception class contains a property named args and it is a:",
-      "Options": {
-        "1": "string",
-        "2": "list",
-        "3": "tuple",
-        "4": "dictionary"
-      }
-    },
-    "Q168": {
-      "Category": "Functions",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "x = lambda a, b: a ** b",
-        "print(x(2, 10))"
-      ],
-      "Options": {
-        "1": "SyntaxError",
-        "2": "1024",
-        "3": "2222222222"
-      }
-    },
-    "Q171": {
-      "Category": "Error Handling",
-      "Question": "Entering the try: block implies that:",
-      "Options": {
-        "1": "the block will be omitted.",
-        "2": "none of the instructions from this block will be executed.",
-        "3": "all of the instructions from this block will be executed.",
-        "4": "some of the instructions from this block may not be executed."
-      }
-    },
-    "Q174": {
-      "Category": "I/O",
-      "Question": "Assuming that the open() invocation has gone successfully, the following snippet will:",
-      "CodeSnippet": [
-        "for x in open('file', 'rt'):",
-        "    print(x)"
-      ],
-      "Options": {
-        "1": "read the whole file at once.",
-        "2": "cause an exception.",
-        "3": "read the file line by line.",
-        "4": "read the file character by character."
-      }
-    },
-    "Q176": {
-      "Category": "Basics",
-      "Question": "Which of the following statements are true? (Select two answers.)",
-      "Options": {
-        "1": "The input() function reads data from the stdin stream.",
-        "2": "There are three pre-opened file streams.",
-        "3": "The readlines() function returns a string.",
-        "4": "The first argument of the open() function is an integer value."
-      }
-    },
-    "Q180": {
-      "Category": "Data Aggregates",
-      "Question": "How many elements does the L list contain?",
-      "CodeSnippet": [
-        "L = [i for i in range(-1, -2)]"
-      ],
-      "Options": {
-        "1": "zero",
-        "2": "one",
-        "3": "two",
-        "4": "three"
-      }
-    },
-  
-    
-    "Q184": {
-      "Category": "I/O",
-      "Question": "Which method is used to break the connection between the file handle and a physical file?",
-      "Options": {
-        "1": "disconnect()",
-        "2": "lock()",
-        "3": "shutup()",
-        "4": "close()"
-      }
-    },
-    "Q189": {
-      "Category": "Modules",
-      "Question": "A function named f() is included in a module named m and the module is part of a package named p. Which of the following code snippets allows you to properly invoke the function? (Select two answers.)",
-      "Options": {
-        "1": "import p.m.f",
-        "2": "import p.m\np.m.f()",
-        "3": "from p.m import f",
-        "4": "import p\nm.f()"
-      }
-    },
-    "Q190": {
-      "Category": "Modules",
-      "Question": "You need to find out if a hardware platform utilizes the x86 or arm CPU. Which method from the module platform can you use? (Select two answers.)",
-      "Options": {
-        "1": "hardware()",
-        "2": "platform()",
-        "3": "node()",
-        "4": "processor()"
-      }
-    },
-    "Q194": {
-      "Category": "OOP",
-      "Question": "What is the expected behavior of the following snippet?",
-      "CodeSnippet": [
-        "class Team:",
-        "    def show_ID(self):",
-        "        print(self.get_ID())",
-        "    def get_ID(self):",
-        "        return \"anonymous\"",
-        "class A(Team):",
-        "    def get_ID(self):",
-        "        return \"Alpha\"",
-        "a = A()",
-        "a.show_ID()"
-      ],
-      "Options": {
-        "1": "The code will print: anonymous",
-        "2": "The code will print: Alpha",
-        "3": "The code will raise an AttributeError",
-        "4": "The code will raise a TypeError"
-      }
-    },
-    "Q195": {
-      "Category": "OOP",
-      "Question": "What is the expected output of the following code?",
-      "CodeSnippet": [
-        "class Cat:",
-        "    Species = 1",
-        "    def get_species(self):",
-        "        return 'kitty'",
-        "class Tiger(Cat):",
-        "    def get_species(self):",
-        "        return 'tiggy'",
-        "    def set_species(self):",
-        "        pass",
-        "creature = Tiger()",
-        "print(hasattr(creature, \"Species\"),",
-        "      hasattr(Cat, \"set_species\"))"
-      ],
-      "Options": {
-        "1": "False True",
-        "2": "True False",
-        "3": "False False",
-        "4": "True True"
-      }
-    }
-  
-  
-  
-   
-  
-  
-   
-  
-  
-  
-  
-   
-  
-  
-  
-  
+  }
+}]
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+

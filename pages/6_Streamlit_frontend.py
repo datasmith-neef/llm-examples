@@ -1,5 +1,7 @@
 import streamlit as st
 import time 
+import requests
+from streamlit_lottie import st_lottie
 
 with st.sidebar:
     pass
@@ -26,7 +28,7 @@ image = st.file_uploader("Lade ein Bild hoch", type = ["png","jpg"])
 if image is not None:
     st.image(image)
 
-val = st.slider("Temperature of youre model",min_value = 0 , max_value = 1)
+val = st.slider("Temperature of youre model",min_value = 0 , max_value = 100)
 print(val)
 
 val = st.text_input("Gib einen Wert ein ", max_chars = 50)
@@ -45,7 +47,7 @@ import plotly.graph_objects as go
 # Erstelle ein Tachometer (Gauge Chart)
 fig = go.Figure(go.Indicator(
     mode="gauge+number",
-    value=270,
+    value=130,
     domain={'x': [0, 1], 'y': [0, 1]},
     gauge={'axis': {'range': [0, 360]}}
 ))
@@ -54,15 +56,40 @@ fig = go.Figure(go.Indicator(
 st.plotly_chart(fig)
 
 bar = st.progress(0)
-for i in range(10):
-    time.sleep(2)
+for i in range(3):
+    time.sleep(1)
     bar.progress(i)
 
-st.markdown("## Regeistrierung")
+
+st.markdown("## Registrierung")
 with st.form("User Registration"):
     col1,col2 = st.columns(2)
-    col1.text_input("Vorname")
-    col2.text_input("Nachname")
+    f_name = col1.text_input("Vorname")
+    l_name = col2.text_input("Nachname")
     st.text_input("email adresse")
     st.text_input("Passwort",type="password")
-    st.form_submit_button("Senden")
+    day,month,year = st.columns(3)
+    day.text_input("Day")
+    month.text_input("Month")
+    year.text_input("Year")
+    s_state = st.form_submit_button("Senden")
+    if s_state:
+        if f_name == "" and l_name == "":
+            st.warning("Please Fill above fields")
+        else:
+            st.success("Submitted Sucussfully")
+            
+
+
+# # Load the Lottie file from a URL
+# url = "https://lottie.host/d61820d7-b543-4882-a08b-31593bd0b8dc/MLYrGpQ9GY.json"
+# response = requests.get(url)
+# if response.status_code != 200:
+#     st.error("Error loading Lottie animation.")
+# else:
+#     lottie_json = response.json()
+#     # Display the Lottie animation with a unique key
+#     with st_lottie(key="unique_key"):
+#         st.write("This is displayed while the animation is playing.")
+
+
