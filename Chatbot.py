@@ -48,8 +48,8 @@ st.markdown('<div class="typewriter-text">💬 Datasmith-GPT</div>', unsafe_allo
 st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
 st.markdown("---")
 # Load the animation from a JSON file
-#with open("Animation_robot.json", "r") as f:
- #   animation = json.load(f)
+with open("Animation_robot.json", "r") as f:
+    animation = json.load(f)
 
 # Define the CSS style for the animation
 
@@ -69,9 +69,9 @@ body {
 </style>
 """
 # Display the animation with the CSS style
-#st_lottie(animation, speed=1, width=100, height=100, key="animation")
+st_lottie(animation, speed=1, width=100, height=100, key="animation")
 # Add the CSS to the app
-#st.markdown(css, unsafe_allow_html=True)
+st.markdown(css, unsafe_allow_html=True)
 
 
 with st.sidebar:
