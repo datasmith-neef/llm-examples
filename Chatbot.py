@@ -3,9 +3,8 @@ import streamlit as st
 import os    
 import pcap
 import streamlit as st
-
-
-import streamlit as st
+from streamlit_lottie import st_lottie 
+import json
 
 st.markdown("""
     <style>
@@ -47,13 +46,31 @@ st.markdown("""
 st.markdown('<div class="typewriter-text">💬 Datasmith-GPT</div>', unsafe_allow_html=True)
 
 st.caption("🚀 A chatbot powered by OpenAI LLM and Datasmith Office")
-
-
-
-
 st.markdown("---")
+# Load the animation from a JSON file
+with open("Animation_robot.json", "r") as f:
+    animation = json.load(f)
+# Define the CSS style for the animation
 
-
+css = """
+<style>
+body {
+    background-color: #000000;
+}
+.lottie-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+</style>
+"""
+# Display the animation with the CSS style
+st_lottie(animation, speed=1, width=100, height=100, key="animation")
+# Add the CSS to the app
+st.markdown(css, unsafe_allow_html=True)
 
 
 with st.sidebar:
