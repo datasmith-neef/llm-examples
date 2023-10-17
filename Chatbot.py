@@ -84,10 +84,7 @@ with st.sidebar:
     username = st.text_input("Benutzername")
     password = st.text_input("Passwort", type="password")
 
-    if openai_api_key and username and password :
-        user = s.Users(username,openai_api_key)
     
-
     if user_option == "Registrieren":
         confirm_password = st.text_input("Passwort bestätigen", type="password")
         if st.button("Registrieren"):
@@ -104,12 +101,7 @@ with st.sidebar:
             if True:  # Platzhalter für die Überprüfung der Anmeldeinformationen
                 st.success("Anmeldung erfolgreich!")
                 openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password")
-                if st.button("API-Schlüssel speichern"):
-                    encrypted_key = encrypt_key(openai_api_key)
-                    # Speichern Sie den verschlüsselten Schlüssel in der Datenbank oder in einer Datei
-                    st.success("API-Schlüssel erfolgreich gespeichert!")
-            else:
-                st.error("Falscher Benutzername oder Passwort.")
+                
 
 
 tutorial_prompt = ""
